@@ -5,8 +5,7 @@ print(saludo)
 # Suma
 a: int = 5
 b: int = 10
-c: int
-c = a+b
+c: int = a + b
 print("La suma de " + str( a ) + " + "+ str( b ) + " es igual a " + str(c))
 
 # Multiplicacion
