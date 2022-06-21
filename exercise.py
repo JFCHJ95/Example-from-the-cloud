@@ -1,4 +1,7 @@
 # First exercises
+from distutils.command.build_scripts import first_line_re
+
+
 saludo = "Hola mundo"
 print(saludo)
 
@@ -6,18 +9,21 @@ print(saludo)
 a: int = 5
 b: int = 10
 c: int = a + b
-print("La suma de " + str( a ) + " + "+ str( b ) + " es igual a " + str(c))
+print("La suma de " + str(a) + " + " + str(b) + " es igual a " + str(c))
 
 # Multiplicacion
-def multip(n1: int, n2: int) ->int:
-    x = n1 * n2
-    return x
+def multip(first_value: int, second_value: int) -> int:
+    """
+    This funtion multiply two values
+    """
+    return first_value * second_value
 
-print(multip(5,10))
 
-# Repetir 
+print(multip(first_value=5, second_value=10))
+
+# Repetir
 d: int = 3
-cadena: str = 'Saludos '
+cadena: str = "Saludos "
 texto: str
-texto = d*cadena
+texto = d * cadena
 print(texto)
